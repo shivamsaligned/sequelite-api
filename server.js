@@ -52,7 +52,7 @@ app.get("/contacts/:id",jsonParser, async(req, res) => {
 
 });
 
-app.put("/contacts/:id",jsonParser, async(req, res) => {
+app.put("/contacts/:id", jsonParser , async(req, res) => {
   try {
     console.log(req.body)
     const contactID = req.params.id;
@@ -87,3 +87,4 @@ const PORT = 2000;
 app.listen(PORT, () => {
   console.log(`Server is running at http://localhost:${PORT}/contacts`);
 });
+
