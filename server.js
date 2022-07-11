@@ -3,6 +3,7 @@ var bodyParser = require('body-parser')
 const sequelize = require("./config/database");
 const Contact = require("./controllers/Contact");
 
+
 sequelize
   .sync({ force: true })
   .then(() => console.log("Sqlite Database is connected to node.js"));
