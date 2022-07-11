@@ -2,7 +2,7 @@ const express = require("express");
 var bodyParser = require('body-parser')
 const sequelize = require("./config/database");
 const Contact = require("./controllers/Contact");
-
+var cors = require('cors')
 
 sequelize
   .sync({ force: true })
