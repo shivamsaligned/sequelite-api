@@ -9,6 +9,7 @@ sequelize
   .then(() => console.log("Sqlite Database is connected to node.js"));
 
 const app = express();
+app.use(cors())
 
 var jsonParser = bodyParser.json();
   
